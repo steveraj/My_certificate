@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NARESHKUMAR CERTIFICATE'S</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            padding: 8px 16px;
+            margin: 5px;
+            text-decoration: none;
+            background-color: #4e4e4e;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Certificate Viewer</h1>
+    </header>
+    
+    <main>
+        <iframe id="pdfViewer" src="ComputerVision.pdf" frameborder="0"></iframe>
+
+        <nav>
+            <a onclick="loadPDF('ComputerVision.pdf')">Certificate 1</a>
+            <a onclick="loadPDF('AI.pdf')">2</a>
+            <a onclick="loadPDF('ML.pdf')">3</a>
+            <a onclick="loadPDF('DL.pdf')">4</a>
+            <a onclick="loadPDF('NLP.pdf')">5</a>
+            <a onclick="loadPDF('GPT.pdf')">6</a>
+            <!-- Add more links for additional certificates as needed -->
+        </nav>
+    </main>
+
+    <script>
+        function loadPDF(pdfPath) {
+            document.getElementById('pdfViewer').src = pdfPath;
+        }
+    </script>
+</body>
+</html>
